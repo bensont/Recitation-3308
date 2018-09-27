@@ -1,0 +1,99 @@
+Tyler Benson - bensont (GitHub profile)
+Alex Kennedy - akennedy4155 (GitHub profile)
+
+1. I have an account (bensont)
+
+2. I created the repository in github through the browser
+
+Using bash:
+3. git clone 'Recitation-3308'
+
+4. touch README.md      // creates
+   nano README.md       // open edit for required info
+
+   git commit README.md
+
+5. git add Sample1.txt Sample2.txt
+   git commit Sample1.txt, Sample2.txt -m "Adding Sample 1 and 2"
+
+6. git tag -a v0.0.1 -m "My Version 0.0.1"
+
+7. git push
+   git push --tags
+
+8. git checkout -b 'new-feature'
+
+9. git add Sample3.txt Sample4.txt
+   git commit Sample3.txt Sample4.txt
+
+10. git checkout 'master'
+
+11. nano Sample1.txt
+    //  I edited the file to say "I edited this file"
+    git add Sample1.txt
+    git commit
+
+12. git merge 'new-feature'
+
+13. git checkout "new-feature"
+
+14. push 'master' 'new-feature'
+
+15. Found Alex Kennedy to work with
+
+16. Granted permission online by:
+    settings -> collaborators -> invite
+
+17. git clone https://github.com/akennedy4155/Recitation-3308
+
+18. nano readme.md  // Edited my name
+
+19. git add readme.md
+    git commit
+
+20. git push
+
+21. used cd to direct to correct directory.
+
+22. checkout 'master'
+
+23. nano README.md  // Added required text
+
+24. git add README.md
+    git commit -m "Commit Merge Conflict edit in README"
+
+25. Confirmed with partner
+
+26. git pull
+
+27. Merge conflict did occur for Tyler (me)
+
+28. I used git diff to find the differences
+    I deleted the annotations and made changes to incorporate from both edits
+    I then had to add, commit, pull, and push
+    git diff README.md
+    git add README.md
+    git commit
+
+    Author: bensont <36897397+bensont@users.noreply.github.com>
+    Date:   Thu Sep 27 15:44:12 2018 -0600
+
+        Resolving Merge Conflict in README.md
+
+29. diff --cc README.md
+    index b15f7f3,6d675bd..83cb6f7
+    --- a/README.md
+    +++ b/README.md
+    @@@ -1,5 -1,4 +1,9 @@@
+      # Recitation-3308
+      Tyler Benson
+      Version Control
+     +
+    ++
+     +This might cause a merge conflict
+    ++
+    + PARTNER: Alex Kennedy
+    ++
+
+30. git pull   // check for updates before push
+    git push
